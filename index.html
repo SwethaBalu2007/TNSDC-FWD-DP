@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Digital Portfolio - Swetha B</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9; color: #333;
+    }
+    header {
+      background: rgb(168, 51, 100); color: white;
+      padding: 20px; text-align: center;
+    }
+    nav a {
+      margin: 0 10px; color: white; text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px; max-width: 900px; margin: auto;
+    }
+    .skills, .projects {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: white; padding: 20px; border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center; padding: 20px;
+      background: #333; color: white;
+    }
+    button {
+      background: rgb(0, 139, 93); color: white; border: none; padding: 10px;
+      border-radius: 5px; cursor: pointer;
+    }
+    input, textarea {
+      width: 100%; padding: 8px; margin: 5px 0;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Digital Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <b>Swetha B</b>, currently pursuing <b>B.Sc Computer Science With Artificial Intelligence</b>. My ambition is to become a <b>Front End Developer</b>. This portfolio showcases my education, skills, certifications, and projects.</p>
+  </section>
+
+  
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>🎓 B.Sc Computer Science With Artificial Intelligence <span class="status">(Ongoing)</span></h3>
+      <p>2025 – Present</p>
+    </div>
+  
+    <div class="edu-item">
+      <h3>📘 12th Standard <span class="status">(Completed)</span></h3>
+      <p>2023 – 2024</p>
+    </div>
+  
+    <div class="edu-item">
+      <h3>🏫 10th Standard <span class="status">(Completed)</span></h3>
+      <p>2021 – 2022</p>
+    </div>
+  </section>
+  
+  <style>
+  .education {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+ 
+  
+  .edu-item {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+  }
+  
+  .edu-item h3 {
+    margin: 0 0 6px;
+    font-size: 1.1rem;
+    color: #111827; /* title stays normal black */
+  }
+  
+  .edu-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #6b7280;
+  }
+  
+  .status {
+    font-style: italic;
+    margin-left: 8px;
+  }
+  
+  .status.ongoing {
+    color: #16a34a; /* green for ongoing */
+  }
+  
+  .status.completed {
+    color: #6b7280; /* gray for completed */
+  }
+  </style>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".edu-item .status").forEach(el => {
+      if (el.textContent.includes("Ongoing")) {
+        el.classList.add("ongoing");
+      } else {
+        el.classList.add("completed");
+      }
+    });
+  });
+  </script>
+ 
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">Java</div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Infosys i Accelerate Women Hackathon</h3>
+        <p>Participation Certificate</p>
+      </div>
+      <div class="card">
+        <h3>Agnirva Space Internship Program</h3>
+        <p>Successfully participated in internship program.</p>
+      </div>
+      <div class="card">
+      <h3>Cyber Detox Workshop</h3>
+      <p>Certified in Cyber Security Awareness</p>
+    </div>
+      <div class="card">
+        <h3>Digital 101 Journey by NASSCOM</h3>
+        <p>Certified in Digital 101 journey program.</p>
+      </div>
+      <div class="card">
+        <h3>Gen AI Literacy by NASSCOM</h3>
+        <p>Certified in Generative AI Literacy course</p>
+    </div>
+    <div class="card">
+   <h3>Generative AI in Tamil</h3>
+   <p>Certified by GUVI (Sept 2023)</p>
+ </div>
+ 
+
+<div class="card">
+<h3> SAWITAI Learnathon</h3>
+<p>Certified in Fundamentals of AI</p>
+</div>
+
+<div class="card">
+<h3>National Hackathon</h3>
+<p>Participated in National Hackathon</p>
+</div>
+  
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Created using HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h3>Body Mass Index [BMI] Calculator</h3>
+        <p>Mini project using Python</p>
+      </div>
+      <div class="card">
+        <h3>Library Management System</h3>
+        <p>Mini project using Python</p>
+      </div>
+    </div>
+  </section> 
+  <!-- Contact Section -->
+<div class="contact-container">
+  <h2>Contact details</h2>
+
+  <div class="contact-item">
+    <span>📧 Email:</span>
+    <a href="mailto:swethabalu456@gmail.com">swethabalu456@gmail.com</a>
+  </div>
+
+  <div class="contact-item">
+    <span>📱 Phone:</span>
+    <a href="tel:+918220010704">+91 8220010704</a>
+  </div>
+
+
+  <div class="contact-item">
+    <span>🐙 GitHub:</span>
+    <a href="https://github.com/SwethaBalu2007" target="_blank">github.com/SwethaBalu2007</a>
+  </div>
+</div>
+
+<style>
+.contact-container {
+  max-width: 870px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+.contact-container h2 {
+ 
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 18px;
+}
+.contact-item span {
+  font-weight: bold;
+  width: 140px;
+  color: #444;
+}
+.contact-item a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.contact-item a:hover {
+  text-decoration: underline;
+}
+</style>
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required><br>
+      <input type="email" id="email" placeholder="Your Email" required><br>
+      <textarea id="message" placeholder="Your Message"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Swetha B | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Simple Form Validation
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      if(name && email){
+        alert("Thank you, " + name + "! Your message has been sent.");
+      } else {
+        alert("Please fill in all required fields.");
+      }
+    });
+  </script>
+</body>
+</html>
